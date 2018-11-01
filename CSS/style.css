@@ -6,9 +6,12 @@ html {
 
 }
 
-
 h1, p {
     text-align: center;
+}
+
+p {
+    font-size:40px;
 }
 
 header {
@@ -20,15 +23,12 @@ header {
     border: #5F3F00 6px solid;
     border-radius: 10%;
     margin-bottom:2vh;
-    
-
 }
 
 #playButton {
     border-radius: 5px;
     border: #5F3F00 2px solid;
-    padding:5px 5px;
-    
+    padding:5px 5px;   
 }
 
 .top-bar {
@@ -39,11 +39,7 @@ header {
     margin-bottom: 5vh;
     max-height:5vh;
     align-items: center;
-
-
 }
-
-
 
 .dot {
     font-family: 'Baloo Bhaina', cursive;
@@ -56,7 +52,6 @@ header {
     display: inline-block;
     text-align: center;
     margin:6px 6px;
-
 }
 
 #numArea {
@@ -67,10 +62,7 @@ header {
     border: #5F3F00 6px dotted;
     height:50vh ;
     background: #AC7F25;
-
 }
-
-
 
 .correct {
 background:green;
@@ -80,7 +72,6 @@ border:#5F3F00 2px solid;
 .wrong {
     background:red;
     border:#5F3F00 2px solid;
-
 }
 
 footer {
@@ -89,5 +80,4 @@ footer {
     height: 10vh;
     width: 100%;
     text-align: center;
-
 }

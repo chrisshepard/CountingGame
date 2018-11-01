@@ -12,7 +12,6 @@ var numArea = document.getElementById('numArea');
 var levelViewer = document.getElementById('levelViewer');
 var bubbleSize = document.getElementsByClassName("dot");
 
-
 function time() {
     timeLimit--;
     if (timeLimit >= 0) {
@@ -69,18 +68,15 @@ var game = {
         }
     },
     shuffleDots: function () {
-
         var nums = this.numberArray;
         ranNums = this.ranNums;
         i = nums.length,
             j = 0;
-
         while (i--) {
             j = Math.floor(Math.random() * (i + 1));
             ranNums.push(nums[j]);
             nums.splice(j, 1);
         }
-
     },
     clearArrays: function () {
         this.numberArray = [];
@@ -98,7 +94,6 @@ var view = {
     createDots: function () {
         game.fillDots();
         game.shuffleDots();
-
         for (var i = 0; i < 10; i++) {
             var number = game.ranNums[i];
             var bubble = document.createElement('span');
