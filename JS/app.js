@@ -1,5 +1,5 @@
 var timer = document.getElementById("timer");
-const maxTimeLimit = 30;
+const maxTimeLimit = 20;
 const initialState = "START";
 const restartState = "QUIT";
 const nextLevel = "Next Level";
@@ -11,13 +11,26 @@ var numberofLevels = 10;
 var numArea = document.getElementById('numArea');
 var levelViewer = document.getElementById('levelViewer');
 var bubbleSize = document.getElementsByClassName("dot");
+var pBar = document.getElementById("pBar");
 
 function time() {
+    var tCounter = timeLimit;
+    tCounter--;
     timeLimit--;
+    pBar.style.width = ((tCounter * 5) + "%");
+    if ((tCounter * 5 >= 60)) {
+        pBar.className = "progress-bar progress-bar-striped progress-bar-animated bg-success";
+    } else if ((tCounter * 5 > 30 && tCounter * 5 < 60)) {
+        pBar.className = "progress-bar progress-bar-striped progress-bar-animated bg-warning";
+    } else {
+        pBar.className = "progress-bar progress-bar-striped progress-bar-animated bg-danger";
+    }
+
     if (timeLimit >= 0) {
         timer.innerHTML = timeLimit;
     } else {
         numArea.innerHTML = "Try Again!";
+        pBar.style.width = "100%";
         clearInterval(timerStart);
     }
 }
@@ -43,6 +56,8 @@ var game = {
             levelViewer.innerHTML = "";
             clearInterval(timerStart);
             setTimeLimit();
+            pBar.style.width = "100%";
+            pBar.className = "progress-bar progress-bar-striped progress-bar-animated bg-success";
             numArea.innerHTML = "<p>Click the numbers from lowest to highest. <br> Count to 100 to Complete the Game!</p>";
         } else if (playButton.innerHTML === nextLevel) {
             numArea.innerHTML = "";
@@ -122,6 +137,9 @@ var view = {
             element.srcElement.className = "correct dot";
             if (currentDot === dotsPerLevel && timer.innerHTML !== "0") {
                 numArea.innerHTML = "You Won!";
+                timer.innerHTML = maxTimeLimit;
+                pBar.style.width = "100%";
+                pBar.className = "progress-bar progress-bar-striped progress-bar-animated bg-success";
                 clearInterval(timerStart);
                 if (multiplier == (numberofLevels - 1)) {
                     numArea.innerHTML = "You counted to 100! Great Job.";

@@ -3,15 +3,22 @@ html {
     height:100vh;
     width: 100vw;
     background: #EFC675;
-
+    display: flex;
+    justify-content: center;
+    
 }
 
 h1, p {
     text-align: center;
+    
 }
 
 p {
     font-size:40px;
+}
+body {
+    max-width:95vw;
+    background: #EFC675;
 }
 
 header {
@@ -19,26 +26,37 @@ header {
     align-items: center;
     justify-content: center;
     font-family: 'Baloo Bhaina', cursive;
-    max-height: 10vh;
     border: #5F3F00 6px solid;
     border-radius: 10%;
     margin-bottom:2vh;
+    margin-top:2vh;
 }
 
 #playButton {
     border-radius: 5px;
     border: #5F3F00 2px solid;
-    padding:5px 5px;   
+    padding:5px 5px;  
+    margin-left:5vw; 
+    margin-right: 5vw;
 }
 
 .top-bar {
+    background: #EFC675;
     font-family: 'Fascinate Inline', cursive;
     font-size: 24px;
     display: flex;
-    justify-content: space-around;
+    margin-top:5vh;
     margin-bottom: 5vh;
     max-height:5vh;
     align-items: center;
+}
+
+.timeBar {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-right:0;
+    width:50vw;
 }
 
 .dot {
@@ -55,12 +73,13 @@ header {
 }
 
 #numArea {
-    font-size: 40px;
+    
+    font-size: 20px;
     padding-top:10vh;
     font-family: 'Poor Story', cursive;
     text-align: center;
     border: #5F3F00 6px dotted;
-    height:50vh ;
+    height:60vh ;
     background: #AC7F25;
 }
 
@@ -80,4 +99,13 @@ footer {
     height: 10vh;
     width: 100%;
     text-align: center;
+}
+
+.progress {
+
+   width: 25vw;
+}
+
+h1 {
+    font-size:26px;
 }
