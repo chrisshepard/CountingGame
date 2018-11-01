@@ -1,0 +1,93 @@
+html {
+    margin:0;
+    height:100vh;
+    width: 100vw;
+    background: #EFC675;
+
+}
+
+
+h1, p {
+    text-align: center;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo Bhaina', cursive;
+    max-height: 10vh;
+    border: #5F3F00 6px solid;
+    border-radius: 10%;
+    margin-bottom:2vh;
+    
+
+}
+
+#playButton {
+    border-radius: 5px;
+    border: #5F3F00 2px solid;
+    padding:5px 5px;
+    
+}
+
+.top-bar {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+    max-height:5vh;
+    align-items: center;
+
+
+}
+
+
+
+.dot {
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 35px;
+    height: 70px;
+    width:70px;
+    background-color:#EFC675 ;
+    border:#5F3F00 2px solid;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin:6px 6px;
+
+}
+
+#numArea {
+    font-size: 60px;
+    padding-top:10vh;
+    font-family: 'Poor Story', cursive;
+    text-align: center;
+    border: #5F3F00 6px dotted;
+    height:50vh ;
+    background: #AC7F25;
+
+}
+
+
+
+.correct {
+background:green;
+border:#5F3F00 2px solid;
+}
+
+.wrong {
+    background:red;
+    border:#5F3F00 2px solid;
+
+}
+
+footer {
+    font-family: 'Faster One', cursive;
+    font-size:30px;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+
+}
