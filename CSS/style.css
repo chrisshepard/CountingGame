@@ -58,7 +58,7 @@ header {
 .timeBar {
     display: flex;
     justify-content:flex-end;
-    width:50vw;
+    width:70vw;
     margin-right:5vw;
     align-items: center;
 }
@@ -107,7 +107,7 @@ footer {
 
 .progress {
    margin-left:2vw;
-   width: 25vw;
+   width: 35vw;
 }
 
 h1 {
