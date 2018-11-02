@@ -136,7 +136,7 @@ var view = {
         if (currentDot + (multiplier * dotsPerLevel) == element.srcElement.innerHTML) {
             element.srcElement.className = "correct dot";
             if (currentDot === dotsPerLevel && timer.innerHTML !== "0") {
-                numArea.innerHTML = "You Won!";
+                numArea.innerHTML = "Good Job!";
                 timer.innerHTML = maxTimeLimit;
                 pBar.style.width = "100%";
                 pBar.className = "progress-bar progress-bar-striped progress-bar-animated bg-success";
