@@ -1,3 +1,4 @@
+
 html {
     margin:0;
     height:100vh;
@@ -8,14 +9,15 @@ html {
     
 }
 
-h1, p {
-    text-align: center;
-    
+h1 {
+    font-size:30px;
+    text-align:center;   
 }
 
-p {
-    font-size:40px;
+p { text-align: center;
+    font-size:30px;
 }
+
 body {
     max-width:95vw;
     background: #EFC675;
@@ -25,29 +27,31 @@ header {
     display:flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Baloo Bhaina', cursive;
     border: #5F3F00 6px solid;
     border-radius: 10%;
-    margin-bottom:2vh;
-    margin-top:2vh;
+    margin-top: 2vh;
+
 }
 
 #playButton {
+    font-size:30px;
+    width:35vw;
+    text-align:center;
     border-radius: 5px;
     border: #5F3F00 2px solid;
-    padding:5px 5px;  
+    padding:2px 2px;  
     margin-left:2vw; 
     margin-right: 2vw;
 }
 
 .top-bar {
     background: #EFC675;
-    font-family: 'Fascinate Inline', cursive;
+    font-family:  'Fascinate Inline', cursive;
     font-size: 24px;
     display: flex;
-    margin-top:5vh;
-    margin-bottom: 5vh;
-    max-height:5vh;
+    margin-top:6vh;
+    margin-bottom: 6vh;
+    max-height:6.5vh;
     align-items: center;
 }
 
@@ -65,7 +69,7 @@ header {
 
 .dot {
     font-family: 'Baloo Bhaina', cursive;
-    font-size: 35px;
+    font-size: 50px;
     height: 70px;
     width:70px;
     background-color:#EFC675 ;
@@ -75,6 +79,7 @@ header {
     text-align: center;
     margin:6px 6px;
 }
+
 
 #numArea {
     

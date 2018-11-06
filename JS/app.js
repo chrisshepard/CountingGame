@@ -5,10 +5,10 @@ const nextLevel = "Next Level";
 const secondsInterval = 1000;
 const dotsPerLevel = 10;
 const numberofLevels = 10;
-var timer = document.getElementById("timer");
+
 var multiplier = 0;
 var currentDot = 1;
-
+var timer = document.getElementById("timer");
 var numArea = document.getElementById('numArea');
 var levelViewer = document.getElementById('levelViewer');
 var bubbleSize = document.getElementsByClassName("dot");
