@@ -1,0 +1,143 @@
+html {
+    width:100%;
+    height:100%;
+    padding: 3vh 3vw;
+}
+
+li {
+    text-align: center;
+    list-style: none;   
+    position: absolute; 
+    width: 7vw;
+    height: 7vw;
+    vertical-align: middle;
+    padding-top: 4vh;
+}
+
+@media only screen and (max-width: 900px) {
+    li {        
+        height:9vh;
+        width:9vh;
+        padding-top: 2vh; 
+    }
+}
+
+.dot{
+    background: url("../Icons/blank.png");
+    background-size: contain;
+}
+
+header {
+    height:10vh;
+}
+
+.correct {
+    background: url("../Icons/correct.png");
+    background-size: contain;
+}
+
+.wrong {
+    background: url("../Icons/wrong.png");
+    background-size: contain;
+}
+
+.a {
+   top:18.5%;
+   left:5%; 
+}
+
+.b {
+    top:15.5%;
+    left:26%; 
+}
+
+.c {
+    top:15%;
+   left:49%;
+}
+
+.d {
+    top:30%;
+   left:76%;
+}
+
+.e {
+    top:31%;
+   left:13%;
+}
+
+.f {
+    top:75%;
+   left:5%;
+}
+
+.g {
+    top:80%;
+   left:72%;
+}
+
+.h {
+    top:67%;
+   left:47%;
+}
+
+.i {
+    top:42%;
+   left:55%;
+}
+
+.j {
+    top:68%;
+   left:22%;
+}
+ 
+.k {
+    top:40%;
+   left:27%;
+}
+
+.l {
+    top:56%;
+   left:15%;
+}
+
+.m {
+    top:59%;
+   left:72%;
+}
+
+.n {
+    top:52%;
+   left:45%;
+}
+
+.o {
+    top:30%;
+   left:49%;
+}
+
+.p {
+    top:87%;
+   left:9%;
+}
+
+.q {
+    top:79%;
+   left:32%;
+}
+
+.r {
+    top:86%;
+   left:49%;
+}
+
+.s {
+    top:15%;
+   left:72%;
+}
+
+.t {
+    top:46%;
+   left:5%;
+}
+
