@@ -29,8 +29,7 @@ var game = {
             this.numbers.push({
                 value: num,
                 verified: undefined,
-            }
-            );
+            });
             if (level <= 2) {
                 levels.randomLocation();
             } else if (level <= 5) {
@@ -118,7 +117,7 @@ var view = {
                 itemLI.id = position;
 
                 if (item.verified === undefined) {
-                    itemLI.classList.add ("dot"); 
+                    itemLI.classList.add("dot");
 
                 } else if (item.verified === true) {
                     itemLI.classList.add("dotClicked", "correct");
